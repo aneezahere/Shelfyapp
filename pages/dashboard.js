@@ -1,6 +1,7 @@
 // pages/dashboard.js
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const Dashboard = () => {
   return (
@@ -9,28 +10,28 @@ const Dashboard = () => {
       <p style={styles.subText}>Your ultimate friend to keep track of your pantry</p>
       <div style={styles.grid}>
         <div style={styles.card}>
-          <a href="/inventory" style={styles.cardLink}>
+          <Link href="/inventory" style={styles.cardLink}>
             <Image src="/inventory.png" alt="Inventory" width={80} height={80} style={styles.icon} />
             <h3 style={styles.cardTitle}>Inventory</h3>
-          </a>
+          </Link>
         </div>
         <div style={styles.card}>
-          <a href="/expiringSoon" style={styles.cardLink}>
+          <Link href="/expiringSoon" style={styles.cardLink}>
             <Image src="/deadline.png" alt="Expiration Dates" width={80} height={80} style={styles.icon} />
             <h3 style={styles.cardTitle}>Expiration Dates</h3>
-          </a>
+          </Link>
         </div>
         <div style={styles.card}>
-          <a href="/shoppingCart" style={styles.cardLink}>
+          <Link href="/shoppingCart" style={styles.cardLink}>
             <Image src="/grocery-cart.png" alt="Shopping Cart" width={80} height={80} style={styles.icon} />
             <h3 style={styles.cardTitle}>Shopping Cart</h3>
-          </a>
+          </Link>
         </div>
         <div style={styles.card}>
-          <a href="/recipeGenerator" style={styles.cardLink}>
+          <Link href="/recipeGenerator" style={styles.cardLink}>
             <Image src="/recipe.png" alt="Recipe Generator" width={80} height={80} style={styles.icon} />
             <h3 style={styles.cardTitle}>Recipe Generator</h3>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
